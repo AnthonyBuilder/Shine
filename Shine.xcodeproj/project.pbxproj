@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9206CFAF26D5740C00191FD3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9206CFAE26D5740C00191FD3 /* HomeView.swift */; };
+		9206CFB226D5783300191FD3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9206CFB126D5783300191FD3 /* HeaderView.swift */; };
 		92815F9926D54A290003929A /* ShineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92815F9826D54A290003929A /* ShineApp.swift */; };
 		92815F9B26D54A290003929A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92815F9A26D54A290003929A /* ContentView.swift */; };
 		92815F9D26D54A2B0003929A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92815F9C26D54A2B0003929A /* Assets.xcassets */; };
@@ -16,6 +18,9 @@
 		92815FAF26D54A2B0003929A /* ShineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92815FAE26D54A2B0003929A /* ShineTests.swift */; };
 		92815FB926D54A2B0003929A /* ShineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92815FB826D54A2B0003929A /* ShineUITests.swift */; };
 		92815FBB26D54A2B0003929A /* ShineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92815FBA26D54A2B0003929A /* ShineUITestsLaunchTests.swift */; };
+		9294685F26D5A1FF00F8A87E /* SchedulerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294685E26D5A1FF00F8A87E /* SchedulerModel.swift */; };
+		92E1E44626D5799B00C5D9DB /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1E44526D5799B00C5D9DB /* AppStrings.swift */; };
+		92E1E44826D57C8900C5D9DB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1E44726D57C8900C5D9DB /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9206CFAE26D5740C00191FD3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9206CFB126D5783300191FD3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		92815F9526D54A290003929A /* Shine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92815F9826D54A290003929A /* ShineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShineApp.swift; sourceTree = "<group>"; };
 		92815F9A26D54A290003929A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +55,9 @@
 		92815FB426D54A2B0003929A /* ShineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92815FB826D54A2B0003929A /* ShineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShineUITests.swift; sourceTree = "<group>"; };
 		92815FBA26D54A2B0003929A /* ShineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9294685E26D5A1FF00F8A87E /* SchedulerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerModel.swift; sourceTree = "<group>"; };
+		92E1E44526D5799B00C5D9DB /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		92E1E44726D57C8900C5D9DB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9206CFAD26D5731400191FD3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9206CFAE26D5740C00191FD3 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9206CFB026D5781A00191FD3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9206CFB126D5783300191FD3 /* HeaderView.swift */,
+				92E1E44726D57C8900C5D9DB /* Card.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		92815F8C26D54A290003929A = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +125,16 @@
 		92815F9726D54A290003929A /* Shine */ = {
 			isa = PBXGroup;
 			children = (
+				9294685D26D5A1E900F8A87E /* Scheduler */,
+				9206CFB026D5781A00191FD3 /* Shared */,
+				9206CFAD26D5731400191FD3 /* Home */,
 				92815F9826D54A290003929A /* ShineApp.swift */,
 				92815F9A26D54A290003929A /* ContentView.swift */,
 				92815F9C26D54A2B0003929A /* Assets.xcassets */,
 				92815FA126D54A2B0003929A /* Persistence.swift */,
 				92815FA326D54A2B0003929A /* Shine.xcdatamodeld */,
 				92815F9E26D54A2B0003929A /* Preview Content */,
+				92E1E44526D5799B00C5D9DB /* AppStrings.swift */,
 			);
 			path = Shine;
 			sourceTree = "<group>";
@@ -131,6 +162,14 @@
 				92815FBA26D54A2B0003929A /* ShineUITestsLaunchTests.swift */,
 			);
 			path = ShineUITests;
+			sourceTree = "<group>";
+		};
+		9294685D26D5A1E900F8A87E /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				9294685E26D5A1FF00F8A87E /* SchedulerModel.swift */,
+			);
+			path = Scheduler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				92815FA226D54A2B0003929A /* Persistence.swift in Sources */,
+				9206CFB226D5783300191FD3 /* HeaderView.swift in Sources */,
 				92815FA526D54A2B0003929A /* Shine.xcdatamodeld in Sources */,
 				92815F9B26D54A290003929A /* ContentView.swift in Sources */,
+				9294685F26D5A1FF00F8A87E /* SchedulerModel.swift in Sources */,
+				92E1E44626D5799B00C5D9DB /* AppStrings.swift in Sources */,
+				9206CFAF26D5740C00191FD3 /* HomeView.swift in Sources */,
 				92815F9926D54A290003929A /* ShineApp.swift in Sources */,
+				92E1E44826D57C8900C5D9DB /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
